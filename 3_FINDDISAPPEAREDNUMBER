@@ -1,0 +1,6 @@
+class Solution:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        numbers=set(range(1,len(nums)+1))
+        mis=list(numbers-set(nums))
+        return sorted(mis)
+       
