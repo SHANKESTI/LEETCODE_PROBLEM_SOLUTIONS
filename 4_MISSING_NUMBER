@@ -1,0 +1,7 @@
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        lis=set(range(len(nums)+1))
+        lis1=set(nums)
+        lis2=lis-lis1
+        num = int(next(iter(lis2)))
+        return num
